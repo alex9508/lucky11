@@ -1,0 +1,61 @@
+.dashboard-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  color: var(--color-text-main);
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.dashboard-card {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* --- Media Queries for Mobile Responsiveness --- */
+
+@media (max-width: 768px) {
+  .dashboard-container {
+    padding: 15px 10px;
+  }
+
+  .dashboard-header {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Admin Match items */
+  .admin-match-item {
+    flex-direction: column !important;
+    gap: 10px !important;
+    align-items: stretch !important;
+  }
+  
+  .admin-match-item-controls {
+    justify-content: space-between !important;
+    width: 100% !important;
+  }
+  
+  .create-matchday-form {
+    flex-direction: column !important;
+  }
+}
